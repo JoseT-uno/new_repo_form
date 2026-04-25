@@ -16,5 +16,6 @@ jobs:
         docker run -d -p 8000:8000 -e 'DJANGO_SECRET_KEY=jtorres' pipeline-test
     - name: curl_ftw
       run: |
-        curl -f http://localhost:8000/
+        sleep 10
+        curl -f http://localhost:8000/ 
         
