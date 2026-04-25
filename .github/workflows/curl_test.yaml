@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: get_code
-      uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f447ce83dd
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
     - name: docker_build
       run: |
         docker build -t pipeline-test .
