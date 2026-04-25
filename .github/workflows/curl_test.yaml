@@ -1,6 +1,6 @@
 name: Build-Curl
-on: 
-  workflow_dispatch:
+on:
+  workflow_dispatch
 permissions: {}
 jobs:
   build-and-curl:
@@ -13,8 +13,8 @@ jobs:
         docker build -t pipeline-test .
     - name: docker_run
       run: |
-        docker run -d -p 8000:8000 -e 'DJANGO_SECRET_KEY=' pipeline-test
-    - name: curl-ftw
+        docker run -d -p 8000:8000 -e 'DJANGO_SECRET_KEY=jtorres' pipeline-test
+    - name: curl_ftw
       run: |
         curl -f http://localhost:8000/
         
