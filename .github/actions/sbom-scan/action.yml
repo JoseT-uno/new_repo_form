@@ -1,6 +1,6 @@
 name: 'SBOM Generation and Scanning'
 description: 'Generates a software vill of materials and scans for known vulnerabilities'
-author: 'peter'
+author: 'jose'
 outputs:
   sbom-file:
     description: 'the syft generated sbom'
