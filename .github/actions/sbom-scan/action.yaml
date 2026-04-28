@@ -1,0 +1,11 @@
+name: 'SBOM Generation and Scanning'
+description: 'Generates a software vill of materials and scans for known vulnerabilities'
+author: 'peter'
+outputs:
+  sbom-file:
+    description: 'the syft generated sbom'
+    value: ${{ steps.sbom-gen-and-scane.outputs.sbom-file }}
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  
