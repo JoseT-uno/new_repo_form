@@ -17,9 +17,9 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_container_registry" "josetuno-ACR" {
+resource "azurerm_container_registry" "josetorres-ACR" {
   name = "jtorresunoacmp2400"
-  resource_group_name = "rg-josetorres"
+  resource_group_name = "rg-jtorres"
   location = "Central US"
   sku = "Basic"
   admin_enabled = false
