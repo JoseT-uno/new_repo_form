@@ -19,7 +19,7 @@ provider "azurerm" {
 
 resource "azurerm_container_registry" "jtorres_acr" {
   name = "jtorresacmp2400"
-  resource_group_name = "rg-jtorres"
+  resource_group_name = "rg-jtorres19"
   location = "Central US"
   sku = "Basic"
   admin_enabled = false
