@@ -28,7 +28,7 @@ resource "azurerm_container_registry" "jtorres-ACR" {
   sku = "Basic"
   admin_enabled = false
 }
-#stage2 start here
+
 resource "azurerm_container_group" "jtorres-aci" {
   name                = "acmp-jtorres-aci"
   location            = "Central US"
