@@ -78,7 +78,7 @@ jobs:
         docker tag application-final jtorresacmp2400.azurecr.io/final
         docker push jtorresacmp2400.azurecr.io/final
 
-    terraform-stage-2:
+  terraform-stage-2:
     needs: build-tag-push
     runs-on: ubuntu-latest
     steps:
