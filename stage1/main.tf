@@ -17,7 +17,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_container_registry" "josetorres-ACR" {
+resource "azurerm_container_registry" "jtorres-ACR" {
   name = "jtorresacmp2400"
   resource_group_name = "rg-jtorres"
   location = "Central US"
