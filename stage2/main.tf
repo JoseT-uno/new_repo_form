@@ -21,12 +21,12 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_container_registry" "jtorres-acr" {
-  name = "jtorresacmp2400"
+resource "azurerm_container_registry" "jtorres_acr" {
+  name                = "jtorresacmp2400"
   resource_group_name = "rg-jtorres19"
-  location = "Central US"
-  sku = "Basic"
-  admin_enabled = false
+  location            = "Central US"
+  sku                 = "Basic"
+  admin_enabled       = false
 }
 
 resource "azurerm_container_group" "jtorres-aci" {
