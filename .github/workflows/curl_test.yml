@@ -110,7 +110,7 @@ jobs:
         
 
   terraform-stage-3:
-    needs: terraform-stage-2
+    needs: pre-eval
     runs-on: ubuntu-latest
     steps:
     - name: get-code
