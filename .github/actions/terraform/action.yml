@@ -1,24 +1,24 @@
 name: 'Terraformer'
-description: 'blarg'
-author: 'b'
+description: 'Execute terraform plan and apply steps'
+author: 'JoseT-uno'
 inputs:
   ARM_CLIENT_ID:
-    description: 'd'
+    description: 'The Azure Client ID '
     required: true
   ARM_CLIENT_SECRET:
-    description: 'd'
+    description: 'The Azure client secret'
     required: true
   ARM_SUBSCRIPTION_ID:
-    description: 'd'
+    description: 'The Azure sub'
     required: true
   ARM_TENANT_ID:
-    description: 'd'
+    description: 'The Azure tenant id '
     required: true
   STATE_KEY:
-    description: 'd'
+    description: 'The unqiue key for state lookup'
     required: true
   TF_STAGE:
-    description: 'd'
+    description: 'The TF deployement stage'
     required: true
   DJANGO_SECRET_KEY_PROD:
     description: 'the secret key for django startup'
