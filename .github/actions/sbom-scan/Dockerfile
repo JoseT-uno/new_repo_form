@@ -6,11 +6,8 @@ curl -sSfL https://get.anchore.io/grype | sh -s -- -b /usr/local/bin
 
 WORKDIR /app
 
-#COPY requirements.txt .
-
 COPY entrypoint.sh .
 
 RUN chmod +x entrypoint.sh
 
-#ENTRYPOINT ["bash", "entrypoint.sh"]
 ENTRYPOINT ["/app/entrypoint.sh"]
